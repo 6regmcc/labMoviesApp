@@ -47,7 +47,7 @@ export default function MovieCard({ movie, action }) {
         <Card sx={styles.card}>
             <CardHeader
                 sx={styles.header}
-
+                /*
                 avatar={
                     movie.mustWatch ? (
                         <Avatar sx={styles.avatar}>
@@ -55,6 +55,15 @@ export default function MovieCard({ movie, action }) {
                         </Avatar>
                     ) : null
                 }
+                */
+                avatar={
+                    movie.favourite ? (
+                        <Avatar sx={styles.avatar}>
+                            <FavoriteIcon />
+                        </Avatar>
+                    ) : null
+                }
+
 
                 title={
                     <Typography variant="h5" component="p">
